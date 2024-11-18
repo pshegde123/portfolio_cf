@@ -70,10 +70,14 @@ h4 {
 }
 
 .container {
-  margin: 50px;
+  margin: 2% 20%;
   background-color: var(--coontainerbackground);
   padding: 10px;
   justify-content: center;
+}
+
+.container_contents {
+  justify-items: center
 }
 
 a:link {
