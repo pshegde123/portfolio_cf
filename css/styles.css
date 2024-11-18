@@ -5,7 +5,6 @@
   --linkvisited: darkmagenta;
   --buttonbackground: #394eeb;
   --coontainerbackground: #c6c1c1;
-  /* Font family */
   --fontfamily: "Indie Flower", cursive;
   --fontstyle: normal;
   --fontweight: 300;
@@ -71,9 +70,16 @@ h4 {
 
 .container {
   margin: 50px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--coontainerbackground);
   padding: 10px;
-  justify-content: center;
+  justify-items: center;
+}
+
+.container_contents {
+  border: 5px double black;
+  justify-items: center;
 }
 
 a:link {
