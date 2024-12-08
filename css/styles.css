@@ -70,14 +70,14 @@ h4 {
 
 .container {
   margin: 20px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
   /*background-color: #c6c1c1;*/
   padding: 10px;
-  justify-items: center;
 }
 
 .container_contents {
+  padding: 20px;
   border: 5px double black;
   justify-items: left;
 }
@@ -100,6 +100,56 @@ h4 {
 .form-submit {
   float: right;
   padding: 10px
+}
+
+.emailCheck {
+  font-size: small;
+}
+
+.validInput {
+  color: green;
+}
+
+.invalidInput {
+  color: red;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 a:link {
