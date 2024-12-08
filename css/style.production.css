@@ -18,7 +18,7 @@ hr {
 }
 
 body {
-    font-family: "Indie Flower", cursive;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
@@ -62,7 +62,7 @@ h4 {
 }
 
 .container {
-    margin: 50px;
+    margin: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -70,14 +70,34 @@ h4 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #c6c1c1;
+    /*background-color: #c6c1c1;*/
     padding: 10px;
     justify-items: center;
 }
 
 .container_contents {
     border: 5px double black;
-    justify-items: center;
+    justify-items: left;
+}
+
+.form-element-email {
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.form-element-phone {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.form-element-message {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.form-submit {
+    float: right;
+    padding: 10px
 }
 
 a:link {
@@ -143,7 +163,7 @@ a:visited {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: #394eeb;
+    background-color: #8490ef;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -162,7 +182,7 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: #394eeb;
+    background-color: #8490ef;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -287,7 +307,7 @@ button:focus,
     font-size: 16px;
     border: double;
     border-color: rgb(150, 239, 153);
-    background-color: #394eeb;
+    background-color: #8490ef;
 }
 
 .grid__item__button a:link {
@@ -352,6 +372,32 @@ button:focus,
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
     animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.city {
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-name: city-color-change;
+    animation-name: city-color-change;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.wheel {
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-name: wheel-color-change;
+    animation-name: wheel-color-change;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
 @media all and (max-width: 500px) {
